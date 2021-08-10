@@ -1,5 +1,5 @@
 {
-    const playGame(playerInput()) = function{
+    const playGame = function(playerInput()){
         clearMessages()
         const randomNumber = Math.floor(Math.random() * 3 + 1);
         console.log('Wylosowana liczba to: ' + randomNumber);
@@ -18,7 +18,7 @@
 
 
     //Funkcja getMoveName
-        const getMoveName(argMoveId) = function{
+        const getMoveName = function(argMoveId){
             if(argMoveId == 1){
                 return 'kamień';
             }else if(argMoveId == 2){
